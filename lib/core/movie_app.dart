@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_movie/presentation/pages/main_page/main_screen.dart';
+import 'package:test_movie/presentation/pages/%20home_page/home_screen.dart';
 
 class MovieApp extends StatefulWidget {
   const MovieApp({super.key});
@@ -18,7 +18,7 @@ class _MovieAppState extends State<MovieApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: const MainScreen(),
+      home: const HomeScreen(),
       builder: (context, widget) => SafeArea(child: widget ?? const SizedBox()),
     );
   }
