@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_movie/config/theme/theme_palette/default_palette.dart';
 import 'package:test_movie/presentation/tokens/spacing.dart';
 
 class HorizontalMovieCard extends StatelessWidget {
@@ -9,7 +10,6 @@ class HorizontalMovieCard extends StatelessWidget {
   static const iconSize = 30.0;
   static const widthOfCard = 300.0;
   static const heightOfCard = 200.0;
-  static const grayColor = Colors.grey;
   static const bookmarkPositionedTop = 25.0;
   static const bookmarkPositionedRight = 15.0;
   static const bookmarkIcon = 'lib/icons/bookmark.png';
@@ -29,7 +29,7 @@ class HorizontalMovieCard extends StatelessWidget {
                 width: widthOfCard,
                 height: heightOfCard,
                 decoration: BoxDecoration(
-                  color: imagePath == null ? grayColor : null,
+                  color: imagePath == null ? DefaultPalette.cardColor : null,
                   borderRadius: cardBorderRadius,
                   image: imagePath != null
                       ? DecorationImage(

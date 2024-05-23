@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_movie/config/theme/theme_palette/default_palette.dart';
 import 'package:test_movie/presentation/tokens/spacing.dart';
 import 'package:test_movie/presentation/widgets/app_bar_widget.dart';
 import 'package:test_movie/presentation/widgets/horizontal_movie_card_widget.dart';
@@ -29,7 +30,7 @@ class _HomeLayoutState extends State<HomeLayout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarWidget(title: 'Top Five'),
-      backgroundColor: Colors.black,
+      backgroundColor: DefaultPalette.backgroundColor,
       body: Padding(
         padding: screenPadding,
         child: ListView(

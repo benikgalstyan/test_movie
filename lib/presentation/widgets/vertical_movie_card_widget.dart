@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_movie/config/theme/theme_palette/default_palette.dart';
 import 'package:test_movie/presentation/tokens/spacing.dart';
 
 class VerticalMovieCard extends StatelessWidget {
@@ -9,7 +10,6 @@ class VerticalMovieCard extends StatelessWidget {
   static const iconSize = 30.0;
   static const widthOfCard = 182.0;
   static const heightOfCard = 273.0;
-  static const grayColor = Colors.grey;
   static const bookmarkPositionedTop = 25.0;
   static const bookmarkPositionedRight = 15.0;
   static const cardPadding = EdgeInsets.only(bottom: 12.0);
@@ -30,7 +30,7 @@ class VerticalMovieCard extends StatelessWidget {
                 width: widthOfCard,
                 height: heightOfCard,
                 decoration: BoxDecoration(
-                  color: imagePath == null ? grayColor : null,
+                  color: imagePath == null ? DefaultPalette.cardColor : null,
                   borderRadius: cardBorderRadius,
                   image: imagePath != null
                       ? DecorationImage(

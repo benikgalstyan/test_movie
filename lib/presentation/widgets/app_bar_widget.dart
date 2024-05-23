@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_movie/config/theme/theme_palette/default_palette.dart';
 import 'package:test_movie/presentation/tokens/spacing.dart';
 import 'package:test_movie/presentation/widgets/section_title_widget.dart';
 
@@ -11,7 +12,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black,
+      backgroundColor: DefaultPalette.backgroundColor,
       title: Row(
         children: [
           if (icon != null) Icon(icon),

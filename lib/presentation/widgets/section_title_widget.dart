@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_movie/config/theme/theme_palette/default_palette.dart';
 
 class SectionTitle extends StatelessWidget {
   final String title;
@@ -32,7 +33,7 @@ class SectionTitle extends StatelessWidget {
                 text: ".",
                 style: TextStyle(
                   fontSize: fontSize,
-                  color: Colors.yellow,
+                  color: DefaultPalette.subtitleColor,
                 ),
               ),
             ],
@@ -46,7 +47,7 @@ class SectionTitle extends StatelessWidget {
               subtitle!,
               style: const TextStyle(
                 fontSize: subtitleFontSize,
-                color: Colors.yellow,
+                color: DefaultPalette.subtitleColor,
               ),
             ),
           ),

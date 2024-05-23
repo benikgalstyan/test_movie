@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_movie/config/theme/theme_palette/default_palette.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final int selectedIndex;
@@ -24,7 +25,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: Colors.black,
+      backgroundColor: DefaultPalette.backgroundColor,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Image.asset(
@@ -52,8 +53,6 @@ class CustomBottomNavigationBar extends StatelessWidget {
         ),
       ],
       currentIndex: selectedIndex,
-      selectedItemColor: Colors.yellow,
-      unselectedItemColor: Colors.white,
       onTap: onItemTapped,
     );
   }
